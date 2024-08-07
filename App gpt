@@ -1,0 +1,51 @@
+Hola Cómo estás? Estoy trabajando en un computador lubuntu, tengo node.js, postgressql y estoy a acrgo de automatizar algunos procesos en  una emprendimiento pequeño familiar de compra, venta y mantención de computadores usados. Quiero registrar y poder almacenar las caracteristricas de los productos que vendemos y generar un contenido de texto para publicar de todos los productos que vamos a vender. 
+
+Para estoy quiero partir haciendo una aplicaicón de javascript con la ibrearías de react y bootstrap, que la ejecute desde la consola que haga lo que te propongo en el siguiente seudo codigo.  
+
+Datos de entrada y salida: 
+Entrada:
+[Los datos que debería recibir son numeros, strings de un formulario que sea la primero que muestra al usuario.] 
+
+Salida:
+[Un mensaje que diga que se actulizó la base de datos y un mensaje tipo que sea un archivo de texto que se visualice para poder copiarlo en la pantalla.] 
+
+Flujo de trabajo:
+Front end:
+Crear una aplicación web que trabaje con componentes, que tenga estetica Bootstrap Basic, que se conecte a una api que asímos esta se concete a una base de datos postgres que tendré en render, esa será mi base de datos llamda "datos_producto" 
+
+Respecto de los componentes partamos por los siguientes:
+
+Formulario: [Que capture los siguientes datos, "nombre" (string), "año"(menu desplegable de los años, desde el actual hasta 1990), "procesador" (string), "memoria_ram" (menu desplegable con los siguientes numeros, 2, 4, 6, 8, 12, 16), "tamaño_disco_duro" (numero), "batería buena" (bolean: menu desplegable, si o no), precio (numero).]
+
+Boton: [Crear un boton tipo que después podamos ocupar para distintos tipo de de votones. Ahora en particular quiero ocuparlo al final del formulario y que diga enviar, que cuando se apriete actualice el formulario.] 
+
+Una vez que aprieta boton enviar debería guardar en la base de datos "datos_producto".
+Pienso que el backend de esto sería algo así:
+[Crear un PostgreSQL: Puedes usar PostgreSQL para manejar los "datos_productos" que cargaré en render para poder interactuar con ella. Usa frameworks como Express para Node.js si lo crees necesario. 
+Necesito que reciba los datos del formulario y los agregará a la tabla. Quiero que cada registro tenga un id unico, en la primera columna, la segunda que se registre automaticamente al fecha y hora en una misma columna y después las columnas de acuedo a cada dato del formulario.]
+
+Esto lo quiero cargar en una servidor gratuito llamado render, indicame que pasos debería seguir ahí y también cómo montar esto solo en mi servidor local. 
+ 
+Luego crear el archvio "mensaje_tipo": [estaŕa en una carpeta que se llame "mensajes" que solo se crea si no está creada antes. Que recoge los valores recién recolectados en el formulario y los introduce en un texto pre hecho. 
+
+El texto debería ser algo así:
+"Computador a la venta {nombre}
+Caracteristicas:
+Año: {año} 
+Procesador: {procesador} 
+Cantidad de ram: {memoria_ram} 
+Tamaño {tamaño_disco_duro} 
+Precio: {precio} 
+Despacho a domicilio!]   
+
+
+[Luego mostrar el contenido en del archivo en la pantalla, para que el usuario pueda copiarlo manualmente. 
+Finalmente muestre un ultimo mensaje que diga:
+
+Datos productos agregado exitosamente!]
+
+
+Espero que con lo que te entregué puedas darme las instrucciones para poder montar la aplicación primero a nivel local y después dejar en la web render.
+Si crees que me faltaron pasos o herramientas que no dije, sugiereme también.   
+Muchas gracias!
+

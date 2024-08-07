@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Retail</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario para computadores reutilizados</h1>
+        <form id="computerForm">
+            <div class="form-group">
+                <label for="year">Año</label>
+                <select id="year" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="brand">Marca</label>
+                <input type="text" id="brand" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="model">Modelo</label>
+                <input type="text" id="model" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="ram">Cantidad de RAM (GB)</label>
+                <input type="number" id="ram" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="diskSize">Tamaño del Disco Duro (GB)</label>
+                <input type="number" id="diskSize" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="diskType">Tipo de Disco Duro</label>
+                <select id="diskType" class="form-control">
+                    <option value="solid">Sólido</option>
+                    <option value="mechanical">Mecánico</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="processor">Procesador</label>
+                <input type="text" id="processor" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="ghz">GHz del Procesador</label>
+                <input type="number" id="ghz" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="screenSize">Pulgadas de la Pantalla</label>
+                <input type="number" id="screenSize" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="caseCondition">Estado de la Carcasa</label>
+                <select id="caseCondition" class="form-control">
+                    <option value="broken">Rota</option>
+                    <option value="good">Buena</option>
+                    <option value="impeccable">Impecable</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="batteryCondition">Condición de la Batería</label>
+                <select id="batteryCondition" class="form-control">
+                    <option value="good">Buena</option>
+                    <option value="change">Para el cambio</option>
+                    <option value="bad">Mala</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="audioCondition">Condición del Audio</label>
+                <select id="audioCondition" class="form-control">
+                    <option value="good">Bueno</option>
+                    <option value="bad">Malo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="os">Sistema Operativo</label>
+                <select id="os" class="form-control">
+                    <option value="chromeos">ChromeOS Flex</option>
+                    <option value="windows">Windows</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="price">Precio</label>
+                <input type="number" id="price" class="form-control">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Enviar</button>
+        </form>
+        <h2>Últimas Entradas</h2>
+        <ul id="entriesList" class="list-group"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
